@@ -1,0 +1,150 @@
+/* Background image */
+html {
+  background-image: url("flags.jpg");
+  background-size: auto;
+  height: auto;
+  width: 100%;
+}
+
+/* Font */
+section {
+  color: #333333;
+  font-family: Palatino Linotype;
+  background-color: #90CAF9;
+  height: auto;
+  width: 100;
+  border-radius: 9px;
+}
+
+/* Banner */
+.mountain {
+  height: auto;
+  width: 100%;
+}
+
+/* NavBar */
+
+#navBar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: #90CAF9;
+  border-radius: 9px;
+  margin-top: 9px;
+  position: fixed-top;
+}
+
+#navBar li {
+  float: left;
+}
+
+#navBar li a, .dropbtn {
+  display: inline-block;
+  color: #333333;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#navBar li a:hover, .dropdown:hover .dropbtn {
+  background-color: #64B5F6;
+}
+
+#navBar li.dropdown {
+  display: inline-block;
+}
+
+#navBar .hidden {
+  display: none;
+  position: absolute;
+  background-color: #90CAF9;
+  min-width: 160px;
+}
+
+#navBar .hidden a {
+  color: #333333;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+#navBar .dropdown:hover .hidden {
+  display: block;
+}
+
+#navBar {
+  position: fixed-top;
+}
+
+/* Responsive part */
+
+@media screen and (max-width : 640px)  {
+
+  section #navBar {
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  #navBar li {
+    float: none;
+  }
+
+  #navBar ul {
+    text-align: center;
+  }
+
+}
+/* logo */
+
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  border-radius: 9px;
+}
+
+.logo2 {
+  display: none;
+}
+
+
+#logos {
+  background-color: transparent;
+  height: auto;
+  width: 100;
+}
+
+/* Media query for logo */
+@media only screen and (max-width: 640px) {
+  .logo {
+    display: none;
+  }
+
+  .logo2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    border-radius: 9px;
+    width: 100%;
+
+  }
+}
+
+.img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 9px;
+}
+
+@media only screen and (max-width: 640px) {
+  .img {
+    width: 100%;
+  }
+}
+
+}
